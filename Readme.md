@@ -72,7 +72,7 @@ How to Run
 
 Clone the repository:
 
-git clone https://github.com/yourusername/Equity-Equation-Project.git
+git clone https://github.com/jangojd/LUMS-EEP-PROJECT-FILE/edit/main/Readme.md
 
 Install dependencies:
 
