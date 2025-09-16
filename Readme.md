@@ -6,7 +6,7 @@ The Equity Equation Project is a quantitative study leveraging Machine Learning 
 
 Objectives
 
-Merge PSLM and MICS Data Using STATA
+Merging of each PSLM and MICS Data separately Using STATA
 
 Analyze PSLM and MICS data for Lahore Division.
 
@@ -103,6 +103,7 @@ License
 This project is licensed under the MIT License.
 
 Contribute to bridging the education gap with data-driven insights! 🚀
+
 
 
 
