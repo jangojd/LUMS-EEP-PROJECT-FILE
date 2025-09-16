@@ -5,6 +5,7 @@ Overview
 The Equity Equation Project is a quantitative study leveraging Machine Learning (ML) to analyze education access for students aged 5-15 years in Lahore Division, Pakistan. Using data from the Pakistan Standard Living Measurement (PSLM) and Multiple Indicator Cluster Survey (MICS), we aim to identify key indicators and variables influencing access to education.
 
 Objectives
+
 Merge PSLM and MICS Data Using STATA
 
 Analyze PSLM and MICS data for Lahore Division.
@@ -102,5 +103,6 @@ License
 This project is licensed under the MIT License.
 
 Contribute to bridging the education gap with data-driven insights! 🚀
+
 
 
