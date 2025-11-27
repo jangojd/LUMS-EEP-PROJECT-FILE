@@ -124,59 +124,6 @@ The **Equity Equation Project** is a comprehensive quantitative research initiat
 - Git
 - Jupyter Notebook
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/jangojd/LUMS-EEP-PROJECT-FILE.git
-   cd LUMS-EEP-PROJECT-FILE
-   ```
-
-2. **Create a virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Launch Jupyter Notebook**
-   ```bash
-   jupyter notebook
-   ```
-
-5. **Execute notebooks in order**
-   - Start with `01_data_merging.ipynb` for STATA data preprocessing
-   - Follow with `02_eda.ipynb` for exploratory analysis
-   - Continue with `03_feature_engineering.ipynb`
-   - Finally, run `04_model_training.ipynb` for ML model development
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from researchers, data scientists, and education policy experts. To contribute:
-
-1. **Fork the repository** and create a feature branch
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-2. **Follow coding standards**
-   - Use descriptive variable and function names
-   - Include comprehensive comments and docstrings
-   - Ensure code is reproducible and well-documented
-
-3. **Commit and push changes**
-   ```bash
-   git add .
-   git commit -m "Add meaningful commit message"
-   git push origin feature/your-feature-name
-   ```
-
 4. **Submit a pull request** with detailed description of changes and rationale
 
 ### Reporting Issues
@@ -198,5 +145,6 @@ For questions, collaborations, or further information about the Equity Equation 
 | **Research Associate** | Jawad Ali | jawadaliv28@gmail.com | [@jangojd](https://github.com/jangojd) |
 | **Research Associate** | Anees Amjad | - | - |
 | **Principal Investigator (PI)** | Dr. Farah Nadeem | - | - |
+
 
 
