@@ -1,109 +1,202 @@
-Equity Equation Project (Quantitative Study - ML)
+# Equity Equation Project
+## Bridging the Education Access Gap Through Data-Driven Insights
 
-Overview
+![Analysis Overview](https://github.com/jangojd/LUMS-EEP-PROJECT-FILE/blob/4459a4a1c64613b39cdbd2ab7ae82151c97073c1/PSLM_Analysis/Nankana_Analysis/Figures/NanKana_summary_plot.png)
 
-The Equity Equation Project is a quantitative study leveraging Machine Learning (ML) to analyze education access for students aged 5-15 years in Lahore Division, Pakistan. Using data from the Pakistan Standard Living Measurement (PSLM) and Multiple Indicator Cluster Survey (MICS), we aim to identify key indicators and variables influencing access to education.
+---
 
-Objectives
+## 📋 Project Overview
 
-Merging of each PSLM and MICS Data separately Using STATA
+The **Equity Equation Project** is a comprehensive quantitative research initiative that leverages advanced Machine Learning techniques to analyze and understand education access disparities for students aged 5-15 years across Lahore Division, Pakistan. By integrating data from the **Pakistan Standard Living Measurement (PSLM)** and **Multiple Indicator Cluster Survey (MICS)**, this project identifies critical socio-economic factors influencing educational accessibility and provides evidence-based recommendations for policymakers.
 
-Analyze PSLM and MICS data for Lahore Division.
+---
 
-Identify factors influencing education accessibility.
+## 🎯 Key Objectives
 
-Develop Machine Learning models to determine the most significant variables affecting education access.
+- **Data Integration**: Merge PSLM and MICS datasets separately using STATA for comprehensive analysis
+- **Regional Analysis**: Conduct in-depth analysis of education accessibility patterns in Lahore Division
+- **Factor Identification**: Discover and quantify socio-economic variables affecting education access
+- **Predictive Modeling**: Develop robust Machine Learning models to determine the most significant indicators
+- **Policy Insights**: Generate actionable recommendations to improve educational equity and reduce access disparities
 
-Provide insights to policymakers for improving educational equity.
+---
 
-Data Sources
+## 📊 Data Sources
 
-The project utilizes:
+| Source | Description | Coverage |
+|--------|-------------|----------|
+| **PSLM** | Pakistan Standard Living Measurement Survey | Comprehensive household socio-economic data |
+| **MICS** | Multiple Indicator Cluster Survey | Child-focused indicators and education metrics |
+| **Geographic Focus** | Lahore Division | Primary analysis region |
+| **Age Group** | 5-15 years | Target population for education access analysis |
 
-Pakistan Standard Living Measurement (PSLM) survey data.
+---
 
-Multiple Indicator Cluster Survey (MICS) data.
+## 🔬 Methodology
 
-Methodology
+### 1. **Data Preprocessing**
+- Comprehensive cleaning and validation of raw survey data
+- Strategic handling of missing values using appropriate imputation techniques
+- Standardization and normalization of variables for consistent analysis
+- Creation of binary and categorical variables for modeling
 
-Data Preprocessing
+### 2. **Exploratory Data Analysis (EDA)**
+- Distribution analysis and statistical profiling
+- Correlation and multicollinearity assessment
+- Trend identification across demographic segments
+- Visualization of key patterns and relationships
 
-Cleaning and handling missing values.
+### 3. **Feature Engineering**
+- Extraction of key socio-economic indicators (income, parental education, household size)
+- Creation of composite indices (poverty scores, accessibility indices)
+- Domain knowledge integration for meaningful variable transformations
+- Dimensionality reduction techniques where applicable
 
-Standardizing variables for analysis.
+### 4. **Machine Learning Models**
+- **Classification Models**: Logistic Regression, Random Forest, Gradient Boosting, SVM
+- **Regression Models**: Linear Regression, Ridge/Lasso, XGBoost
+- **Ensemble Methods**: Voting classifiers and stacking approaches
+- Cross-validation and hyperparameter tuning for optimal performance
 
-Exploratory Data Analysis (EDA)
+### 5. **Model Evaluation & Interpretability**
+- Comprehensive performance metrics (Accuracy, Precision, Recall, F1-Score, AUC-ROC)
+- Feature importance analysis using SHAP values and permutation importance
+- Identification of significant variables driving education access disparities
+- Sensitivity analysis for robust insights
 
-Understanding distributions, correlations, and trends.
+---
 
-Feature Engineering
+## 🛠️ Technologies & Tools
 
-Identifying key socio-economic indicators.
+| Component | Tools |
+|-----------|-------|
+| **Data Wrangling** | Python (Pandas, NumPy) |
+| **Statistical Analysis** | SciPy, StatsModels |
+| **Machine Learning** | Scikit-Learn, XGBoost, LightGBM |
+| **Data Visualization** | Matplotlib, Seaborn, Plotly |
+| **Data Merging** | STATA, Python |
+| **Notebooks** | Jupyter Notebooks |
+| **Version Control** | GitHub |
+| **Documentation** | Markdown, Jupyter |
 
-Machine Learning Models
+---
 
-Supervised learning models for classification and regression.
+## 📁 Repository Structure
 
-Model evaluation using performance metrics.
-
-Interpretability & Insights
-
-Identifying significant variables using feature importance techniques.
-
-Technologies Used
-
-Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)
-
-Machine Learning models for predictive analysis
-
-Jupyter Notebooks for interactive data exploration
-
-GitHub for version control and collaboration
-
-Repository Structure
-
+```
 📂 Equity-Equation-Project
- ├── 📁 data              # Raw and processed data files
- ├── 📁 notebooks         # Jupyter Notebooks for analysis
- ├── 📁 models           # Trained models and evaluation metrics
- ├── 📁 reports          # Summary reports and findings
- ├── 📄 README.md        # Project documentation
- ├── 📄 requirements.txt # Dependencies
+ ├── 📁 data
+ │   ├── raw/                    # Original PSLM and MICS datasets
+ │   └── processed/              # Cleaned and merged datasets
+ │
+ ├── 📁 notebooks
+ │   ├── 01_data_merging.ipynb   # STATA preprocessing and merging
+ │   ├── 02_eda.ipynb            # Exploratory data analysis
+ │   ├── 03_feature_engineering.ipynb
+ │   └── 04_model_training.ipynb # ML model development
+ │
+ ├── 📁 models
+ │   ├── trained_models/         # Serialized ML models
+ │   └── evaluation_metrics.csv   # Performance evaluation results
+ │
+ ├── 📁 reports
+ │   ├── analysis_summary.pdf    # Comprehensive findings report
+ │   ├── visualizations/         # Key charts and graphs
+ │   └── policy_recommendations.md
+ │
+ ├── 📁 assets
+ │   └── analysis_overview.png   # Key visualization for README
+ │
+ ├── 📄 README.md                # Project documentation
+ ├── 📄 requirements.txt         # Python dependencies
+ ├── 📄 STATA_commands.do        # Data merging scripts
+ └── 📄 LICENSE                  # MIT License
 
-How to Run
+```
 
-Clone the repository:
+---
 
-git clone https://github.com/jangojd/LUMS-EEP-PROJECT-FILE/edit/main/Readme.md
+## 🚀 Quick Start Guide
 
-Install dependencies:
+### Prerequisites
+- Python 3.8+
+- STATA (for data merging)
+- Git
+- Jupyter Notebook
 
-pip install -r requirements.txt
+### Installation
 
-Run the Jupyter Notebooks for data preprocessing and model training:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/jangojd/LUMS-EEP-PROJECT-FILE.git
+   cd LUMS-EEP-PROJECT-FILE
+   ```
 
-jupyter notebook
+2. **Create a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-Contribution Guidelines
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Fork the repository and create a new branch.
+4. **Launch Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
 
-Follow proper coding conventions and comment your code.
+5. **Execute notebooks in order**
+   - Start with `01_data_merging.ipynb` for STATA data preprocessing
+   - Follow with `02_eda.ipynb` for exploratory analysis
+   - Continue with `03_feature_engineering.ipynb`
+   - Finally, run `04_model_training.ipynb` for ML model development
 
-Submit pull requests with detailed descriptions.
+---
 
-Open issues for reporting bugs or suggesting improvements.
+## 🤝 Contributing
 
-Contact
+We welcome contributions from researchers, data scientists, and education policy experts. To contribute:
 
-For any questions or collaboration opportunities, feel free to reach out to Jawad Ali at jawadaliv28@gmail.com.
+1. **Fork the repository** and create a feature branch
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-License
+2. **Follow coding standards**
+   - Use descriptive variable and function names
+   - Include comprehensive comments and docstrings
+   - Ensure code is reproducible and well-documented
 
-This project is licensed under the MIT License.
+3. **Commit and push changes**
+   ```bash
+   git add .
+   git commit -m "Add meaningful commit message"
+   git push origin feature/your-feature-name
+   ```
 
-Contribute to bridging the education gap with data-driven insights! 🚀
+4. **Submit a pull request** with detailed description of changes and rationale
 
+### Reporting Issues
+Found a bug or have a suggestion? Please open an issue with:
+- Clear description of the problem
+- Steps to reproduce (if applicable)
+- Expected vs. actual behavior
+- Relevant system information
 
+---
+---
+
+## 📧 Contact & Collaboration
+
+For questions, collaborations, or further information about the Equity Equation Project:
+
+| Role | Name | Email | GitHub |
+|------|------|-------|--------|
+| **Research Associate** | Jawad Ali | jawadaliv28@gmail.com | [@jangojd](https://github.com/jangojd) |
+| **Research Associate** | Anees Amjad | - | - |
+| **Principal Investigator (PI)** | Dr. Farah Nadeem | - | - |
 
 
